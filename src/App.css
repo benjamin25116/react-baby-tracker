@@ -1,38 +1,62 @@
+
 .App {
-  text-align: center;
+    max-width: 400px;
+    width: 100vw;
+    margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.greeting__section--date {
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.hero__banner {
+    background: url("/src/images/ben-eleora-huey-lin.JPG") no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0.75rem;
+    border-radius: 12px;
+    height: 50vh;
+    box-shadow: 5px 5px 15px lightgray;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.greeting__section {
+    display:flex;
+    flex-direction: column;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.greeting__section--greeting {
+    font-size: 0.75rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.baby__age {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: white;
+    font-weight: bold;
+    font-size: 1.75rem;
+}
+
+.baby__age--weeks, .baby__age--days {
+    display:flex;
+    flex-direction: column;
+}
+
+.baby__age--days {
+    align-items: flex-end;
+}
+
+.age--weeks--description, .age--days--description {
+    font-size: 0.75rem;
 }
